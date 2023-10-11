@@ -1,0 +1,6 @@
+module Pods_Dolar {
+  umbrella header "Pods-Dolar-umbrella.h"
+
+  export *
+  module * { export * }
+}

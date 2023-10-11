@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dólar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30e-vv-MSe">
+                                <rect key="frame" x="0.0" y="441" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="9nM-xR-9Xn"/>
+                                </constraints>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3r-RM-AMO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dolar1" translatesAutoresizingMaskIntoConstraints="NO" id="zIj-lj-DJM">
+                                        <rect key="frame" x="62.5" y="10" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="250" id="Qvf-vs-GNh"/>
+                                            <constraint firstAttribute="height" constant="250" id="SgI-SD-s2N"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zIj-lj-DJM" firstAttribute="centerY" secondItem="x3r-RM-AMO" secondAttribute="centerY" id="BWJ-Wt-oFS"/>
+                                    <constraint firstAttribute="height" constant="270" id="oCg-4F-9o8"/>
+                                    <constraint firstItem="zIj-lj-DJM" firstAttribute="centerX" secondItem="x3r-RM-AMO" secondAttribute="centerX" id="yTa-1Q-gzh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="NTE-XH-rsT">
+                                <rect key="frame" x="10" y="275" width="355" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="X3m-IN-2D5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="75"/>
+                                <color key="textColor" red="1" green="0.73011618850000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7.5" translatesAutoresizingMaskIntoConstraints="NO" id="9j5-0u-j3k">
+                                <rect key="frame" x="10" y="410" width="355" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Md9-gW-4jx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.091246698943661969" green="0.45895686619718312" blue="0.24462370110985918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="30e-vv-MSe" secondAttribute="trailing" id="59t-py-Lu3"/>
+                            <constraint firstItem="NTE-XH-rsT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="5E7-9Y-laY"/>
+                            <constraint firstItem="30e-vv-MSe" firstAttribute="top" secondItem="9j5-0u-j3k" secondAttribute="bottom" constant="10" id="A65-tC-mtm"/>
+                            <constraint firstAttribute="trailing" secondItem="NTE-XH-rsT" secondAttribute="trailing" constant="10" id="B4f-Xy-pnw"/>
+                            <constraint firstItem="9j5-0u-j3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="HCP-8t-5Yd"/>
+                            <constraint firstAttribute="bottom" secondItem="30e-vv-MSe" secondAttribute="bottom" constant="10" id="Jyp-XV-GIe"/>
+                            <constraint firstItem="x3r-RM-AMO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NYW-zt-BLx"/>
+                            <constraint firstAttribute="trailing" secondItem="x3r-RM-AMO" secondAttribute="trailing" id="R9f-CR-aY3"/>
+                            <constraint firstItem="NTE-XH-rsT" firstAttribute="top" secondItem="x3r-RM-AMO" secondAttribute="bottom" constant="5" id="alP-78-riE"/>
+                            <constraint firstItem="x3r-RM-AMO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bt7-1t-oaO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9j5-0u-j3k" secondAttribute="trailing" constant="10" id="fFs-YJ-rhg"/>
+                            <constraint firstItem="30e-vv-MSe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lsE-KG-s2d"/>
+                            <constraint firstItem="9j5-0u-j3k" firstAttribute="top" secondItem="NTE-XH-rsT" secondAttribute="bottom" constant="35" id="opl-Os-cQy"/>
+                            <constraint firstItem="NTE-XH-rsT" firstAttribute="top" secondItem="x3r-RM-AMO" secondAttribute="bottom" constant="5" id="vj3-b0-FTt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vj3-b0-FTt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="currencyPicker" destination="30e-vv-MSe" id="nMK-EP-bH8"/>
+                        <outlet property="labelFecha" destination="9j5-0u-j3k" id="Rn8-sl-8QW"/>
+                        <outlet property="labelPrecioDolar" destination="NTE-XH-rsT" id="stH-JS-a38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="100.29985007496252"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dolar1" width="781.5" height="781.5"/>
+    </resources>
+</document>
